@@ -18,6 +18,9 @@ const Stack = createStackNavigator<RootStackParams>();
 export const StackNavigator = () => {
   return (
     <Stack.Navigator
+      screenOptions={{
+        headerShown: false
+      }}
       initialRouteName="HomeScreen">
       <Stack.Screen name="HomeScreen" options={{ title:"HomeScreen" }} component={ HomeScreen } />
       <Stack.Screen name="RestaurantScreen" options={{ title:"RestaurantScreen" }} component={ RestaurantScreen } />
