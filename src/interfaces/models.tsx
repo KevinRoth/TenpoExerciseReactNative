@@ -27,3 +27,10 @@ export interface Fav {
     imgSrc: any;
     avatar: any;
 }
+
+export interface Location {
+    latitude: number;
+    longitude: number;
+    address?: string;
+    location?: string;
+}

@@ -84,3 +84,30 @@ export const favoritesData = [
     avatar: require('./../assets/images/restaurant/melt.png'),
   },
 ];
+
+export const addressData = [
+  {
+    address: 'Claudio Gray 2504',
+    latitude: -33.456400,
+    longitude: -70.670741,
+    location: 'Santiago, Región Metropolitana, Chile',
+  },
+  {
+    address: 'Claudio Gray 2368-2306',
+    latitude: -33.455857,
+    longitude: -70.667865,
+    location: 'Santiago, Región Metropolitana, Chile',
+  },
+  {
+    address: 'San Alfonso 498-400',
+    latitude: -33.455585,
+    longitude: -70.675580,
+    location: 'Santiago, Región Metropolitana, Chile',
+  },
+  {
+    address: 'Av Libertador Bernarndo OHiggins',
+    latitude: -33.450671,
+    longitude: -70.678444,
+    location: 'Santiago, Región Metropolitana, Chile',
+  },
+];

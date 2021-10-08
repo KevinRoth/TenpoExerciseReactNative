@@ -33,7 +33,7 @@ export const HomeScreen = ({ route, navigation }: Props) => {
                   <Carousel items={carouselItems} />
                   <View style={styles.content}>
                       <TouchableOpacity onPress={() => navigation.navigate('LocationScreen')}>
-                        <UserAddress address={userAddress}></UserAddress>
+                        <UserAddress address={userAddress?.address}></UserAddress>
                       </TouchableOpacity>
                       <View style={styles.contentList}>
                         <Text style={styles.title}>RESTAURANTES</Text>

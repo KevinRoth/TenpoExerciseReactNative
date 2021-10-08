@@ -14,7 +14,7 @@ export const UserAddress = ({ address }: UserAddressProps) => {
             <View style={styles.addressContainer}>
                 <Text style={styles.address}>
                     {address
-                    ? 'Enviaremos tus pedidios a'
+                    ? 'Enviaremos tus pedidos a'
                     : 'Agregar dirección de entrega'} 
                 </Text>
                {address ? (
