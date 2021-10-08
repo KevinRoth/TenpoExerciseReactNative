@@ -15,24 +15,25 @@ export interface IAppContext {
 const defaultValues: IAppContext = {
   userAddress: undefined,
   setUserAddress: (userAddress: UserAddress) => {},
-}
+};
 
 export const AppContext = createContext<IAppContext>(defaultValues);
 
-export const AppProvider = ({ children }: any) => {
+export const AppProvider = ({children}: any) => {
+  const [userAddress, setAddress] = useState<UserAddress | undefined>(
+    undefined,
+  );
 
-  const [userAddress, setAddress] = useState<UserAddress | undefined>(undefined);
-  
   const setUserAddress = (address: UserAddress) => {
-    setAddress(address)
-  }
+    setAddress(address);
+  };
   return (
     <AppContext.Provider
       value={{
         userAddress,
         setUserAddress,
       }}>
-        {children}
+      {children}
     </AppContext.Provider>
-  )
-}
+  );
+};

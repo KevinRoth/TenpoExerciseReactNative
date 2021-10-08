@@ -1,16 +1,15 @@
-import { useEffect, useState } from 'react';
-import { Category } from '../interfaces/models';
-import { categoriesData } from '../mocks/data-mock';
-
+import {useEffect, useState} from 'react';
+import {Category} from '../interfaces/models';
+import {categoriesData} from '../mocks/data-mock';
 
 export const useCategories = () => {
-    const [state, setState] = useState<Category[]>([]);
+  const [state, setState] = useState<Category[]>([]);
 
-    useEffect(() => {
-        setState(categoriesData);
-    }, []);
+  useEffect(() => {
+    setState(categoriesData);
+  }, []);
 
-    return {
-        state
-    }
-}
+  return {
+    state,
+  };
+};

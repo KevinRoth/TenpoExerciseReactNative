@@ -1,16 +1,15 @@
-import { useEffect, useState } from 'react';
-import { CarouselItem } from '../interfaces/models';
-import { carouselData } from '../mocks/data-mock';
-
+import {useEffect, useState} from 'react';
+import {CarouselItem} from '../interfaces/models';
+import {carouselData} from '../mocks/data-mock';
 
 export const useCarousel = () => {
-    const [state, setState] = useState<CarouselItem[]>([]);
+  const [state, setState] = useState<CarouselItem[]>([]);
 
-    useEffect(() => {
-        setState(carouselData);
-    }, []);
+  useEffect(() => {
+    setState(carouselData);
+  }, []);
 
-    return {
-        state
-    }
-}
+  return {
+    state,
+  };
+};

@@ -88,7 +88,7 @@ export const favoritesData = [
 export const addressData = [
   {
     address: 'Claudio Gray 2504',
-    latitude: -33.456400,
+    latitude: -33.4564,
     longitude: -70.670741,
     location: 'Santiago, Región Metropolitana, Chile',
   },
@@ -101,7 +101,7 @@ export const addressData = [
   {
     address: 'San Alfonso 498-400',
     latitude: -33.455585,
-    longitude: -70.675580,
+    longitude: -70.67558,
     location: 'Santiago, Región Metropolitana, Chile',
   },
   {
