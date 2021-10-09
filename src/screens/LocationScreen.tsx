@@ -69,7 +69,7 @@ export const LocationScreen = () => {
 
   useEffect(() => {
     getCoords();
-  });
+  }, []);
 
   const submit = () => {
     const latitude = coords ? coords.latitude : 0;
